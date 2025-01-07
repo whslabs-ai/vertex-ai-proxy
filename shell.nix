@@ -8,7 +8,7 @@ in
         ps.fastapi
         ps.google-auth
         ps.httpx
-        ps.pydantic
+        ps.pydantic-settings
         ps.requests
         ps.uvicorn
       ]))
