@@ -1,6 +1,6 @@
 fastapi
-uvicorn
-httpx
 google-auth
-python-dotenv
-pydantic 
+httpx
+pydantic-settings
+requests
+uvicorn
