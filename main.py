@@ -10,7 +10,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
     project_id: str
     location: str = "us-central1"
-    port: Optional[int] = 8000  # Default port
+    port: Optional[int] = 8080  # Default port
 
     class Config:
         env_file = ".env"

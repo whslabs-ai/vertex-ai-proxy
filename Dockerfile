@@ -7,4 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"] 
+# Set a default value for PORT if not provided
+ENV PORT=8080
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "$PORT"]
